@@ -10,7 +10,7 @@ public class DAO {
 	public static Connection getConn() {
 		try {
 			Class.forName("oracle.jdbc.OracleDriver");
-			conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "Personal", "123");
+			conn = DriverManager.getConnection("jdbc:oracle:thin:@192.168.0.83:1521:xe", "Personal", "123");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
